@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <Routes>
-          <Route path='/' element={<Header />}>
+          <Route path='/'  element={<Header />}>
             <Route path='/' element={<Home />}/>
           </Route>
         </Routes>
-        <Header/>
+        
       </div>
     </div>
   );
