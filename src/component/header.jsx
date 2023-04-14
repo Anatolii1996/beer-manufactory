@@ -1,4 +1,5 @@
 import { Link, Outlet, NavLink } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -82,6 +83,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          <FaFacebook className="header_icons"/>
         </div>
       </nav>
       <Outlet/>
