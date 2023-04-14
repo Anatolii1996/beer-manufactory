@@ -1,9 +1,9 @@
 const Home = () => {
   return (
-    <div className="App">
-      <div className="wrapper">
+    <div className="home_wrap">
+     
        <p>Home</p>
-      </div>
+     
     </div>
   );
 };
