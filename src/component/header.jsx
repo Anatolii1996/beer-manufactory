@@ -46,17 +46,22 @@ const Header = () => {
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Солод
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Хміль
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                     Солодові екстракти
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                     Пивні дріжжі
                     </a>
                   </li>
                 </ul>
