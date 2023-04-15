@@ -43,28 +43,7 @@ const Header = () => {
                 >
                   Продукти
                 </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Солод
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Хміль
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                     Солодові екстракти
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                     Пивні дріжжі
-                    </a>
-                  </li>
-                </ul>
+                
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -88,10 +67,11 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <FaFacebook className="header_icons"/>
+          
+          <FaFacebook className="header_icons" />
         </div>
       </nav>
-      <Outlet/>
+      <Outlet />
     </>
   );
 };
