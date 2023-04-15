@@ -3,7 +3,7 @@ import bootstrap from 'bootstrap'
 import './App.scss';
 // import { Route, Routes } from 'react-router-dom';
 import Header from "./component/header";
-import Home from "./component/home";
+import Home from "./pages/home";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
