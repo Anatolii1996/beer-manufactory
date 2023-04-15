@@ -12,6 +12,7 @@ const Home = () => {
         <BsFire className="animate__animated animate__bounceIn" />
         <GiBeerStein className="animate__animated animate__fadeInBottomRight"/>
       </div>
+      <div className="home_carousel"></div>
       
     </div>
   );
