@@ -21,8 +21,8 @@ const GliderWrap = () => {
     <div className="glider-contain">
       <div className="glider">
         {cards.map((el, index) => {
-          return <div>
-            <Card key={index} title={el.title} desription={el.description} img={el.img}/>
+          return <div key={index}>
+            <Card  title={el.title} desription={el.description} img={el.img}/>
           </div>;
         })}
       </div>
