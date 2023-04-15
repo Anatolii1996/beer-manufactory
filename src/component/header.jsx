@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import {  Outlet, NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect } from "react";
 import Glider from "glider-js";
 import { cards } from "./cards";

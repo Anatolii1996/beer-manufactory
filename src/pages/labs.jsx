@@ -1,3 +1,4 @@
+/* eslint-disable */
 const Labs=()=>{
 return(
     <p>Лаборатория</p>

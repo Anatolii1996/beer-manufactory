@@ -1,3 +1,4 @@
+/* eslint-disable */
 const About = ()=>{
     return(
         <p>About</p>

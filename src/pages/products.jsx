@@ -1,3 +1,4 @@
+/* eslint-disable */
 const Products=()=>{
 return(
     <p>Products</p>

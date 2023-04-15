@@ -1,3 +1,4 @@
+/* eslint-disable */
 const Card = ({title, img, desription}) => {
   return (
     <div className="card">

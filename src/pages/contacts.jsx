@@ -1,3 +1,4 @@
+/* eslint-disable */
 const Contacts=()=>{
     return(
         <p>Contacts</p>

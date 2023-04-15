@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { CiWheat } from "react-icons/ci";
 import { BsFire } from "react-icons/bs";
 import { GiBeerStein } from "react-icons/gi";

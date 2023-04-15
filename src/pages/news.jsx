@@ -1,3 +1,4 @@
+/* eslint-disable */
 const News=()=>{
     return(
         <p>News</p>
