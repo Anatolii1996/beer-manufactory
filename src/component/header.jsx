@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, Outlet, NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { Menu, Dropdown, Icon } from "antd";
@@ -7,11 +8,11 @@ const SubMenu = Menu.SubMenu;
 
 const menu = (
   <Menu>
-    <Menu.Item>Хміль</Menu.Item>
-    <Menu.Item>Солод</Menu.Item>
-    <SubMenu title="Пивні дріжжі">
-      <Menu.Item>3rd menu item</Menu.Item>
-      <Menu.Item>4th menu item</Menu.Item>
+    <Menu.Item key="hops">Хміль</Menu.Item>
+    <Menu.Item key="malt">Солод</Menu.Item>
+    <SubMenu key="yeast" title="Пивні дріжжі">
+      <Menu.Item key="item3">3rd menu item</Menu.Item>
+      <Menu.Item key="item4">4th menu item</Menu.Item>
     </SubMenu>
   </Menu>
 );
@@ -50,10 +51,16 @@ const Header = () => {
               </li>
 
               <li className="nav-item ">
-                <Dropdown overlay={menu} id="antd_dropdown">
-                  <NavLink className="nav-link" to="/products">
-                    Продукти <DownOutlined type="down" />
-                  </NavLink>
+                <Dropdown overlay={menu} >
+                  
+                    <NavLink className="nav-link" to="/products">
+                      Продукти{" "}
+                      <DownOutlined
+                        type="down"
+                        style={{ verticalAlign: "middle" }}
+                      />
+                    </NavLink>
+                  
                 </Dropdown>
               </li>
               <li className="nav-item">
@@ -72,8 +79,9 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/contacts" className="nav-link">Контакти</NavLink>
-                
+                <NavLink to="/contacts" className="nav-link">
+                  Контакти
+                </NavLink>
               </li>
             </ul>
           </div>

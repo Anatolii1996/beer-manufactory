@@ -34,3 +34,13 @@ align-items: center;
 :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon{
 top: 2px;
 }
+
+.home{
+  height: 500px;
+  background-image: url("https://hotel-edem.lviv.ua/wp-content/uploads/2019/09/golovna-vzhe-obrizana.jpg");
+.home_wrap{
+  height: 500px;
+  background-color: lightgrey;
+  opacity: 0.5;
+}
+}
