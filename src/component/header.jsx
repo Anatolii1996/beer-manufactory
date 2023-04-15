@@ -54,7 +54,7 @@ const Header = () => {
               <li className="nav-item ">
                 
                 <Dropdown overlay={menu}  id="antd_dropdown">
-                  <NavLink className="nav-link">
+                  <NavLink className="nav-link" to="/products">
                     Продукти <DownOutlined type="down" />
                   </NavLink>
                   
