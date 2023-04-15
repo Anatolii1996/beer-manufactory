@@ -4,18 +4,35 @@ import { cards } from "./cards";
 import Card from "./card";
 
 const GliderWrap = () => {
-  useEffect(() => {
-    new Glider(document.querySelector(".glider"), {
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      draggable: true,
-      dots: ".dots",
-      arrows: {
-        prev: ".glider-prev",
-        next: ".glider-next",
-      },
-    });
-  }, []);
+    useEffect(() => {
+        const glider = new Glider(document.querySelector(".glider"), {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          scrollLockDelay: 1000, // Задержка в миллисекундах
+          duration: 3,
+          draggable: true,
+          dots: ".dots",
+          arrows: {
+            prev: ".glider-prev",
+            next: ".glider-next",
+          },
+          // Дополнительные опции
+          // ...
+        });
+    
+        // Функция автоматической прокрутки слайдера
+        const autoScroll = () => {
+          glider.scrollItem(glider.slide + 1);
+        };
+    
+        // Запустить автоматическую прокрутку с интервалом в 3000 миллисекунд (3 секунды)
+        const interval = setInterval(autoScroll, 3000);
+    
+        // Остановить автоматическую прокрутку при размонтировании компонента
+        return () => {
+          clearInterval(interval);
+        };
+      }, []);
 
   return (
     <div className="glider-contain">

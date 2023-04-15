@@ -1,5 +1,4 @@
 const Card = ({title, img, desription}) => {
-    console.log(img);
   return (
     <div className="card">
       <img src={img} className="card-img-top" alt="photo" />
