@@ -20,3 +20,17 @@
   font-size: 25px;
 }
 
+.navbar-nav{
+  align-items: center;
+}
+.ant-dropdown-link{
+  color: black;
+  text-decoration: none;
+}
+.ant-dropdown-menu-submenu-title{
+display: flex;
+align-items: center;
+}
+:where(.css-dev-only-do-not-override-htwhyh).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon{
+top: 2px;
+}

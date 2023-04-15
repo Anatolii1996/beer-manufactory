@@ -1,5 +1,22 @@
 import { Link, Outlet, NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
+import { Menu, Dropdown, Icon } from "antd";
+import { DownOutlined  } from "@ant-design/icons";
+
+
+const SubMenu = Menu.SubMenu;
+
+const menu = (
+  <Menu>
+    <Menu.Item>Хміль</Menu.Item>
+    <Menu.Item>Солод</Menu.Item>
+    <SubMenu title="Пивні дріжжі">
+      <Menu.Item>3rd menu item</Menu.Item>
+      <Menu.Item>4th menu item</Menu.Item>
+    </SubMenu>
+   
+  </Menu>
+);
 
 const Header = () => {
   return (
@@ -33,17 +50,12 @@ const Header = () => {
                 </a>
               </li>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Продукти
-                </a>
-                
+              <li className="nav-item ">
+                <Dropdown overlay={menu} >
+                  <a className="ant-dropdown-link" href="#">
+                    Продукти <DownOutlined type="down" />
+                  </a>
+                </Dropdown>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -67,7 +79,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          
+
           <FaFacebook className="header_icons" />
         </div>
       </nav>
