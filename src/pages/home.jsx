@@ -1,6 +1,7 @@
 import { CiWheat } from "react-icons/ci";
 import { BsFire } from "react-icons/bs";
 import { GiBeerStein } from "react-icons/gi";
+import GliderWrap from "../component/glider";
 
 
 
@@ -12,7 +13,9 @@ const Home = () => {
         <BsFire className="animate__animated animate__bounceIn" />
         <GiBeerStein className="animate__animated animate__fadeInBottomRight"/>
       </div>
-      <div className="home_carousel"></div>
+      <div className="home_carousel">
+        <GliderWrap/>
+      </div>
       
     </div>
   );
