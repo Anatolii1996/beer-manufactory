@@ -16,17 +16,15 @@ const menu = (
   </Menu>
 );
 
-
-
 const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <NavLink className="navbar-brand"  to="/">
+          <NavLink className="navbar-brand" to="/">
             Navbar
           </NavLink>
-          
+
           <button
             className="navbar-toggler"
             type="button"
@@ -52,33 +50,30 @@ const Header = () => {
               </li>
 
               <li className="nav-item ">
-                
-                <Dropdown overlay={menu}  id="antd_dropdown">
+                <Dropdown overlay={menu} id="antd_dropdown">
                   <NavLink className="nav-link" to="/products">
                     Продукти <DownOutlined type="down" />
                   </NavLink>
-                  
                 </Dropdown>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to="/labs">
                   Лабораторна пивоварня
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to="/news">
                   Новини
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink to="/recepie" className="nav-link">
                   Рецепти
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Контакти
-                </a>
+                <NavLink to="/contacts" className="nav-link">Контакти</NavLink>
+                
               </li>
             </ul>
           </div>

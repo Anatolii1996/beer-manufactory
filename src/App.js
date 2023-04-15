@@ -6,6 +6,10 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Products from "./pages/products";
+import Labs from "./pages/labs";
+import News from "./pages/news";
+import Recepie from "./pages/recepie";
+import Contacts from "./pages/contacts";
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
             <Route path='/' element={<Home />}/>
             <Route path='/about' element={<About />}/>
             <Route path='/products' element={<Products />}/>
+            <Route path='/labs' element={<Labs />}/>
+            <Route path='/news' element={<News />}/>
+            <Route path='/recepie' element={<Recepie />}/>
+            <Route path='/contacts' element={<Contacts />}/>
           </Route>
         </Routes>
         
