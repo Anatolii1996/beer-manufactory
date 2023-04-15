@@ -1,8 +1,7 @@
 import { Link, Outlet, NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { Menu, Dropdown, Icon } from "antd";
-import { DownOutlined  } from "@ant-design/icons";
-
+import { DownOutlined } from "@ant-design/icons";
 
 const SubMenu = Menu.SubMenu;
 
@@ -14,18 +13,20 @@ const menu = (
       <Menu.Item>3rd menu item</Menu.Item>
       <Menu.Item>4th menu item</Menu.Item>
     </SubMenu>
-   
   </Menu>
 );
+
+
 
 const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand"  to="/">
             Navbar
-          </a>
+          </NavLink>
+          
           <button
             className="navbar-toggler"
             type="button"
@@ -40,21 +41,23 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link" to="/">
                   Головна
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to="/about">
                   Про компанію
-                </a>
+                </NavLink>
               </li>
 
               <li className="nav-item ">
-                <Dropdown overlay={menu} >
-                  <a className="ant-dropdown-link" href="#">
+                
+                <Dropdown overlay={menu}  id="antd_dropdown">
+                  <NavLink className="nav-link">
                     Продукти <DownOutlined type="down" />
-                  </a>
+                  </NavLink>
+                  
                 </Dropdown>
               </li>
               <li className="nav-item">

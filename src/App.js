@@ -2,8 +2,10 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import bootstrap from 'bootstrap'
 import './App.scss';
 import Header from "./component/header";
-import Home from "./pages/home";
 import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Products from "./pages/products";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Routes>
           <Route path='/'  element={<Header />}>
             <Route path='/' element={<Home />}/>
+            <Route path='/about' element={<About />}/>
+            <Route path='/products' element={<Products />}/>
           </Route>
         </Routes>
         
