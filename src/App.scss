@@ -1,46 +1,68 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App{
+.App {
   background-image: url("../public/img/зерна.jpg");
   width: 100%;
   display: flex;
   justify-content: center;
-  .wrapper{
+  .wrapper {
     width: 90%;
     background-color: #fff;
     height: 100vh;
   }
 }
-.header_icons{
+.header_icons {
   color: rgb(10, 10, 164);
   cursor: pointer;
   font-size: 25px;
 }
 
-.navbar-nav{
+.navbar-nav {
   align-items: center;
 }
-.ant-dropdown-link{
- 
+.ant-dropdown-link {
   text-decoration: none;
 }
-.ant-dropdown-menu-submenu-title{
-display: flex;
-align-items: center;
+.ant-dropdown-menu-submenu-title {
+  display: flex;
+  align-items: center;
 }
-:where(.css-dev-only-do-not-override-htwhyh).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-item .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon, :where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon{
-top: 2px;
+:where(.css-dev-only-do-not-override-htwhyh).ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-item
+  .ant-dropdown-menu-submenu-expand-icon,
+:where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu
+  .ant-dropdown-menu
+  .ant-dropdown-menu-item
+  .ant-dropdown-menu-submenu-expand-icon,
+:where(.css-dev-only-do-not-override-htwhyh).ant-dropdown
+  .ant-dropdown-menu
+  .ant-dropdown-menu-submenu-title
+  .ant-dropdown-menu-submenu-expand-icon,
+:where(.css-dev-only-do-not-override-htwhyh).ant-dropdown-menu-submenu
+  .ant-dropdown-menu
+  .ant-dropdown-menu-submenu-title
+  .ant-dropdown-menu-submenu-expand-icon {
+  top: 2px;
 }
 
-.home{
+.home {
   height: 500px;
   background-image: url("https://hotel-edem.lviv.ua/wp-content/uploads/2019/09/golovna-vzhe-obrizana.jpg");
-.home_wrap{
-  height: 500px;
-  background-color: lightgrey;
-  opacity: 0.5;
-}
+  background-color: aqua;
+  .home_wrap {
+    height: 500px;
+    background-color: rgba(211, 211, 211, 0.5);
+    
+    svg {
+      
+      font-size: 250px;
+      opacity: 1;
+      
+    }
+  }
+  
 }
