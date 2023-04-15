@@ -1,5 +1,6 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import bootstrap from 'bootstrap'
+import 'animate.css';
 import './App.scss';
 import Header from "./component/header";
 import { Route, Routes } from "react-router-dom";

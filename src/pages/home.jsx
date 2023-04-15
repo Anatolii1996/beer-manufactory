@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div className="container-fluid home">
       <div className="home_wrap">
-        <CiWheat />
-        <BsFire/>
-        <GiBeerStein/>
+        <CiWheat className="animate__animated animate__fadeInTopLeft"/>
+        <BsFire className="animate__animated animate__bounceIn" />
+        <GiBeerStein className="animate__animated animate__fadeInBottomRight"/>
       </div>
       
     </div>
