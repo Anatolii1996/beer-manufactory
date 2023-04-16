@@ -17,7 +17,7 @@ const Home = () => {
       <div className="home_carousel">
         <GliderWrap/>
       </div>
-      
+      <div id="barmen"></div>
     </div>
   );
 };

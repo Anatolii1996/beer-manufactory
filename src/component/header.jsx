@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import {  Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
@@ -52,16 +52,14 @@ const Header = () => {
               </li>
 
               <li className="nav-item ">
-                <Dropdown overlay={menu} >
-                  
-                    <NavLink className="nav-link" to="/products">
-                      Продукти{" "}
-                      <DownOutlined
-                        type="down"
-                        style={{ verticalAlign: "middle" }}
-                      />
-                    </NavLink>
-                  
+                <Dropdown overlay={menu}>
+                  <NavLink className="nav-link" to="/products">
+                    Продукти{" "}
+                    <DownOutlined
+                      type="down"
+                      style={{ verticalAlign: "middle" }}
+                    />
+                  </NavLink>
                 </Dropdown>
               </li>
               <li className="nav-item">
@@ -86,7 +84,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-
+         
           <FaFacebook className="header_icons" />
         </div>
       </nav>
