@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React from "react";
+import React , { useState, useEffect } from "react"; 
 import { Outlet, NavLink } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { Menu, Dropdown } from "antd";
@@ -19,9 +19,35 @@ const menu = (
 );
 
 const Header = () => {
+
+  const [step, setStep] = useState(0);
+  const sprites = [
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+  ];
+
+const changeSprite=()=>{
+  setStep(prev=>prev + 1);
+  if (step >= 7) {
+    setStep(0);
+  }
+}
+
+useEffect(() => {
+  const intervalId = setInterval(changeSprite, 1000);
+  return () => {
+    clearInterval(intervalId);
+  };
+}, [step]);
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary header">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
             Navbar
@@ -84,7 +110,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-         
+          <div class={`barmen ${sprites[step]}`}></div>
           <FaFacebook className="header_icons" />
         </div>
       </nav>
