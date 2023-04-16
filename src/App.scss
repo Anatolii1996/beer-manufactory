@@ -63,46 +63,36 @@
   }
 }
 
-$barman-bg-x: -5px; // Перемещение объявления переменной перед использованием
-
-#barmen{
+.barmen {
   width: 60px;
   height: 90px;
   background: url(../public/img/sprite.png);
   background-position-y: -930px;
-  background-position-x: $barman-bg-x; // Использование переменной
-  margin-bottom: 50px;
 
-  animation: play 8s infinite;
+  margin-bottom: 50px;
 }
 
-
-@keyframes play {
-  0%{
-    background-position-x: calc($barman-bg-x -  65px); /* Координаты первого спрайта */
-  }
-  12.5% {
-    background-position-x: calc($barman-bg-x - 130px); /* Координаты второго спрайта */
-  }
-  25% {
-    background-position-x: calc($barman-bg-x -  195px); /* Координаты третьего спрайта */
-  }
-  37.5% {
-    background-position-x: calc($barman-bg-x -  260px); /* Координаты четвертого спрайта */
-  }
-  50% {
-    background-position-x: calc($barman-bg-x -  325px); /* Координаты пятого спрайта */
-  }
-  62.5% {
-    background-position-x: calc($barman-bg-x -  390px); /* Координаты шестого спрайта */
-  }
-  75% {
-    background-position-x: calc($barman-bg-x -  455px); /* Координаты седьмого спрайта */
-  }
-  87.5% {
-    background-position-x: calc($barman-bg-x -   455px); /* Координаты восьмого спрайта */
-  }
-  100% {
-    background-position-x: $barman-bg-x; /* Координаты восьмого спрайта (повтор) */
-  }
+.one {
+  background-position-x: -5px;
+}
+.two {
+  background-position-x: -71px;
+}
+.three {
+  background-position-x: -137px;
+}
+.four {
+  background-position-x: -203px;
+}
+.five {
+  background-position-x: -269px;
+}
+.six {
+  background-position-x: -335px;
+}
+.seven {
+  background-position-x: -401px;
+}
+.eight {
+  background-position-x: -467px;
 }
